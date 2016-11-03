@@ -13,12 +13,12 @@
     </CompilerOptions>
     <Files Count="2">
       <Item1>
-        <HasRegisterProc Value="True"/>
         <Filename Value="tesebuilder.pas"/>
         <UnitName Value="TeseBuilder"/>
       </Item1>
       <Item2>
         <Filename Value="tese.pas"/>
+        <HasRegisterProc Value="True"/>
         <UnitName Value="Tese"/>
       </Item2>
     </Files>
