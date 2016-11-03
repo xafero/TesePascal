@@ -16,14 +16,20 @@ type
     procedure SetUp; override;
     procedure TearDown; override;
   published
-    procedure TestHookUp;
+    procedure TestSerialize;
+    procedure TestDeserialize;
   end;
 
 implementation
 
-procedure TTeseTest.TestHookUp;
+procedure TTeseTest.TestSerialize;
 begin
-  Fail('Write your own test');
+  Fail('Write ?!');
+end;
+
+procedure TTeseTest.TestDeserialize;
+begin
+  Fail('Read ?!');
 end;
 
 procedure TTeseTest.SetUp;
