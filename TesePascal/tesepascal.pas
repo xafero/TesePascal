@@ -7,7 +7,7 @@ unit TesePascal;
 interface
 
 uses
-  Tese, LazarusPackageIntf;
+  TeseBuilder, Tese, LazarusPackageIntf;
 
 implementation
 
