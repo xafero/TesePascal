@@ -41,9 +41,9 @@
         <IsPartOfProject Value="True"/>
       </Unit0>
       <Unit1>
-        <Filename Value="tesepascaltest.pas"/>
+        <Filename Value="tesetest.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="TesePascalTest"/>
+        <UnitName Value="TeseTest"/>
       </Unit1>
     </Units>
   </ProjectOptions>
