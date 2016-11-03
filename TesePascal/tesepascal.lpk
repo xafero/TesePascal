@@ -11,7 +11,7 @@
         <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
       </SearchPaths>
     </CompilerOptions>
-    <Files Count="2">
+    <Files Count="4">
       <Item1>
         <Filename Value="tesebuilder.pas"/>
         <UnitName Value="TeseBuilder"/>
@@ -21,6 +21,14 @@
         <HasRegisterProc Value="True"/>
         <UnitName Value="Tese"/>
       </Item2>
+      <Item3>
+        <Filename Value="tesereaderror.pas"/>
+        <UnitName Value="tesereaderror"/>
+      </Item3>
+      <Item4>
+        <Filename Value="tesewriteerror.pas"/>
+        <UnitName Value="tesewriteerror"/>
+      </Item4>
     </Files>
     <RequiredPkgs Count="1">
       <Item1>
