@@ -5,7 +5,7 @@ unit Tese;
 interface
 
 uses
-  Classes, SysUtils;
+  Classes, SysUtils, tesereaderror, tesewriteerror;
 
 type
   TTese = class
@@ -23,7 +23,8 @@ end;
 
 constructor TTese.Create;
 begin
-  raise Exception.Create('Not implemented!');
+  raise ETeseReadError.Create('Could not read!');
+  raise ETeseWriteError.Create('Could not write!');
 end;
 
 end.
