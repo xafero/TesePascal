@@ -5,11 +5,12 @@ unit TeseTest;
 interface
 
 uses
-  Classes, SysUtils, fpcunit, testutils, testregistry, tese;
+  Classes, SysUtils, fpcunit, testutils, testregistry, tese, tesebuilder;
 
 type
   TTeseTest = class(TTestCase)
   private
+    bld : TTeseBuilder;
     tese : TTese;
   protected
     procedure SetUp; override;
@@ -27,12 +28,14 @@ end;
 
 procedure TTeseTest.SetUp;
 begin
+  bld := TTeseBuilder.Create();
   tese := TTese.Create();
 end;
 
 procedure TTeseTest.TearDown;
 begin
   tese.Free;
+  bld.Free;
 end;
 
 initialization
