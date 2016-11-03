@@ -29,7 +29,8 @@ end;
 procedure TTeseTest.SetUp;
 begin
   bld := TTeseBuilder.Create();
-  tese := TTese.Create();
+  bld.SkipNull := true;
+  tese := bld.Build();
 end;
 
 procedure TTeseTest.TearDown;

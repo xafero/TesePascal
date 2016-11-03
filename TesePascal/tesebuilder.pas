@@ -9,15 +9,24 @@ uses
 
 type
   TTeseBuilder = class
- public
-    constructor Create;
+  private
+    bSkipNull : Boolean;
+  public
+    constructor Create();
+    property SkipNull : Boolean read bSkipNull write bSkipNull;
+    function Build() : TTese;
   end;
 
 implementation
 
 constructor TTeseBuilder.Create;
 begin
-  raise Exception.Create('Not implemented shit!');
+  bSkipNull := false;
+end;
+
+function TTeseBuilder.Build() : TTese;
+begin
+  result := TTese.Create(); 
 end;
 
 end.
